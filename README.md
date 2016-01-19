@@ -2,12 +2,12 @@
 
 ![Imgur](http://i.imgur.com/Vy06FW3.gif)
 
-find *JonathanMatthey* on github.com and find the *mr-potato-head* repository
+find **JonathanMatthey** on github.com and find the **mr-potato-head** repository
 
 >Fork their Repo
 >From the new Repo on your GitHub, copy the clone from https url to your clipboard.
 
-In Cloud 9:
+#### In Cloud 9:
 
 Create a new workspace using the “Clone from URL” option
 
@@ -15,7 +15,7 @@ Create a new workspace using the “Clone from URL” option
 
 Once you are complete with the html and css…
 
-In Cloud 9 terminal:
+#### In Cloud 9 terminal:
 
 > git status
 > git add .
