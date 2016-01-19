@@ -1,0 +1,46 @@
+h1 {
+  text-align: center;
+  font-family:sans-serif;
+}
+body{
+  background:#f4f4f4;
+}
+
+#potato {
+  position: relative;
+  width: 367px;
+  height: 428px;
+  border: 1px solid #ddd;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+#potato img {
+  position: absolute;
+}
+
+#body { top: 28px; left: 68px; }
+
+#arms { top: 177px; left: 26px;}
+
+#ears { top: 104px; left: 58px; }
+
+#eyes { top: 126px; left: 132px; z-index: 4; }
+
+#mouth { top: 233px; left: 119px; z-index: 4; }
+
+#nose { top: 170px; left: 131px; z-index: 6; }
+
+#eyebrows { top: 102px; left: 109px; z-index: 5;}
+
+#glasses { top: 121px; left: 97px; z-index: 7;}
+
+#hat { top: 28px; left: 101px; z-index: 10;}
+
+#moustache { top: 189px; left: 91px; z-index: 5;}
+
+#shoes { top: 297px; left: 46px;}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mr. Potato Head</title>
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <link href="assets/potato.css" type="text/css" rel="stylesheet"/>
+  </head>
+  <body>
+    <h1>Mr. Potato Head</h1>
+    <div id="potato">
+      <img id="body" src="assets/body.png"/>
+      <img id="arms" />
+      <img id="ears" />
+      <img id="eyes" />
+      <img id="mouth" />
+      <img id="nose" />
+      <img id="eyebrows" />
+      <img id="glasses" />
+      <img id="hat" />
+      <img id="moustache" />
+      <img id="shoes" />
+    </div>
+    <script>
+    $(function() {
+      var animatedPotatoes = ["disney-mr-mrs-potato-head.gif", "disney-mr-potato-head-heavy.gif", "disney-mr-potato-head-mad.gif", "disney-mr-potato-head.gif","mrpotatohead1.gif"];
+      var pIndex = 0;
+      var allgood = true;
+      $("#potato").click(function(){
+        $("#potato img").each(function(i,obj){
+          if( typeof $(obj).attr('src') === "undefined" ||
+             $(obj).attr('src') !== "assets/" + $(obj).attr('id') + ".png"){
+            allgood = false;
+            return;
+          }
+        });
+        if(allgood){
+          console.log(allgood)
+          $("#potato img").hide();
+          $("#potato").css('background-image','url(assets/' + animatedPotatoes[pIndex] + ')');
+          pIndex = (pIndex + 1) % animatedPotatoes.length;
+        }
+      })
+    })
+    </script>
+  </body>
+</html>
